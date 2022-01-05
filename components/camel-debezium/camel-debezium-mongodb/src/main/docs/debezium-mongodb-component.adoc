@@ -76,7 +76,7 @@ The Debezium MongoDB Connector component supports 58 options, which are listed b
 | *connectBackoffInitialDelayMs* (mongodb) | The initial delay when trying to reconnect to a primary after a connection cannot be made or when no primary is available, given in milliseconds. Defaults to 1 second (1,000 ms). | 1s | long
 | *connectBackoffMaxDelayMs* (mongodb) | The maximum delay when trying to reconnect to a primary after a connection cannot be made or when no primary is available, given in milliseconds. Defaults to 120 second (120,000 ms). | 2m | long
 | *connectMaxAttempts* (mongodb) | Maximum number of failed connection attempts to a replica set primary before an exception occurs and task is aborted. Defaults to 16, which with the defaults for 'connect.backoff.initial.delay.ms' and 'connect.backoff.max.delay.ms' results in just over 20 minutes of attempts before failing. | 16 | int
-| *converters* (mongodb) | Optional list of custom converters that would be used instead of default ones. The converters are defined using '.type' config option and configured using options '.' |  | String
+| *converters* (mongodb) | Optional list of custom converters that would be used instead of default ones. The converters are defined using '<converter.prefix>.type' config option and configured using options '<converter.prefix>.<option>' |  | String
 | *databaseExcludeList* (mongodb) | A comma-separated list of regular expressions that match the database names for which changes are to be excluded |  | String
 | *databaseHistoryFileFilename* (mongodb) | The path to the file that will be used to record the database history |  | String
 | *databaseIncludeList* (mongodb) | A comma-separated list of regular expressions that match the database names for which changes are to be captured |  | String
@@ -107,7 +107,7 @@ The Debezium MongoDB Connector component supports 58 options, which are listed b
 | *sanitizeFieldNames* (mongodb) | Whether field names will be sanitized to Avro naming conventions | false | boolean
 | *signalDataCollection* (mongodb) | The name of the data collection that is used to send signals/commands to Debezium. Signaling is disabled when not set. |  | String
 | *skippedOperations* (mongodb) | The comma-separated list of operations to skip during streaming, defined as: 'c' for inserts/create; 'u' for updates; 'd' for deletes. By default, no operations will be skipped. |  | String
-| *snapshotCollectionFilter{zwsp}Overrides* (mongodb) | This property contains a comma-separated list of ., for which the initial snapshot may be a subset of data present in the data source. The subset would be defined by mongodb filter query specified as value for property snapshot.collection.filter.override.. |  | String
+| *snapshotCollectionFilter{zwsp}Overrides* (mongodb) | This property contains a comma-separated list of <dbName>.<collectionName>, for which the initial snapshot may be a subset of data present in the data source. The subset would be defined by mongodb filter query specified as value for property snapshot.collection.filter.override.<dbname>.<collectionName> |  | String
 | *snapshotDelayMs* (mongodb) | A delay period before a snapshot will begin, given in milliseconds. Defaults to 0 ms. | 0ms | long
 | *snapshotFetchSize* (mongodb) | The maximum number of records that should be loaded into memory while performing a snapshot |  | int
 | *snapshotIncludeCollectionList* (mongodb) | this setting must be set to specify a list of tables/collections whose snapshot must be taken on creating or restarting the connector. |  | String
@@ -163,7 +163,7 @@ with the following path and query parameters:
 | *connectBackoffInitialDelayMs* (mongodb) | The initial delay when trying to reconnect to a primary after a connection cannot be made or when no primary is available, given in milliseconds. Defaults to 1 second (1,000 ms). | 1s | long
 | *connectBackoffMaxDelayMs* (mongodb) | The maximum delay when trying to reconnect to a primary after a connection cannot be made or when no primary is available, given in milliseconds. Defaults to 120 second (120,000 ms). | 2m | long
 | *connectMaxAttempts* (mongodb) | Maximum number of failed connection attempts to a replica set primary before an exception occurs and task is aborted. Defaults to 16, which with the defaults for 'connect.backoff.initial.delay.ms' and 'connect.backoff.max.delay.ms' results in just over 20 minutes of attempts before failing. | 16 | int
-| *converters* (mongodb) | Optional list of custom converters that would be used instead of default ones. The converters are defined using '.type' config option and configured using options '.' |  | String
+| *converters* (mongodb) | Optional list of custom converters that would be used instead of default ones. The converters are defined using '<converter.prefix>.type' config option and configured using options '<converter.prefix>.<option>' |  | String
 | *databaseExcludeList* (mongodb) | A comma-separated list of regular expressions that match the database names for which changes are to be excluded |  | String
 | *databaseHistoryFileFilename* (mongodb) | The path to the file that will be used to record the database history |  | String
 | *databaseIncludeList* (mongodb) | A comma-separated list of regular expressions that match the database names for which changes are to be captured |  | String
@@ -194,7 +194,7 @@ with the following path and query parameters:
 | *sanitizeFieldNames* (mongodb) | Whether field names will be sanitized to Avro naming conventions | false | boolean
 | *signalDataCollection* (mongodb) | The name of the data collection that is used to send signals/commands to Debezium. Signaling is disabled when not set. |  | String
 | *skippedOperations* (mongodb) | The comma-separated list of operations to skip during streaming, defined as: 'c' for inserts/create; 'u' for updates; 'd' for deletes. By default, no operations will be skipped. |  | String
-| *snapshotCollectionFilter{zwsp}Overrides* (mongodb) | This property contains a comma-separated list of ., for which the initial snapshot may be a subset of data present in the data source. The subset would be defined by mongodb filter query specified as value for property snapshot.collection.filter.override.. |  | String
+| *snapshotCollectionFilter{zwsp}Overrides* (mongodb) | This property contains a comma-separated list of <dbName>.<collectionName>, for which the initial snapshot may be a subset of data present in the data source. The subset would be defined by mongodb filter query specified as value for property snapshot.collection.filter.override.<dbname>.<collectionName> |  | String
 | *snapshotDelayMs* (mongodb) | A delay period before a snapshot will begin, given in milliseconds. Defaults to 0 ms. | 0ms | long
 | *snapshotFetchSize* (mongodb) | The maximum number of records that should be loaded into memory while performing a snapshot |  | int
 | *snapshotIncludeCollectionList* (mongodb) | this setting must be set to specify a list of tables/collections whose snapshot must be taken on creating or restarting the connector. |  | String

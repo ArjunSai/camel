@@ -1847,8 +1847,8 @@ public interface JmsEndpointBuilderFactory {
         }
         /**
          * The number of messages per task. -1 is unlimited. If you use a range
-         * for concurrent consumers (eg min max), then this option can be used
-         * to set a value to eg 100 to control how fast the consumers will
+         * for concurrent consumers (eg min &lt; max), then this option can be
+         * used to set a value to eg 100 to control how fast the consumers will
          * shrink when less work is required.
          * 
          * The option is a: &lt;code&gt;int&lt;/code&gt; type.
@@ -1866,8 +1866,8 @@ public interface JmsEndpointBuilderFactory {
         }
         /**
          * The number of messages per task. -1 is unlimited. If you use a range
-         * for concurrent consumers (eg min max), then this option can be used
-         * to set a value to eg 100 to control how fast the consumers will
+         * for concurrent consumers (eg min &lt; max), then this option can be
+         * used to set a value to eg 100 to control how fast the consumers will
          * shrink when less work is required.
          * 
          * The option will be converted to a &lt;code&gt;int&lt;/code&gt; type.
@@ -4332,8 +4332,8 @@ public interface JmsEndpointBuilderFactory {
         }
         /**
          * The number of messages per task. -1 is unlimited. If you use a range
-         * for concurrent consumers (eg min max), then this option can be used
-         * to set a value to eg 100 to control how fast the consumers will
+         * for concurrent consumers (eg min &lt; max), then this option can be
+         * used to set a value to eg 100 to control how fast the consumers will
          * shrink when less work is required.
          * 
          * The option is a: &lt;code&gt;int&lt;/code&gt; type.
@@ -4351,8 +4351,8 @@ public interface JmsEndpointBuilderFactory {
         }
         /**
          * The number of messages per task. -1 is unlimited. If you use a range
-         * for concurrent consumers (eg min max), then this option can be used
-         * to set a value to eg 100 to control how fast the consumers will
+         * for concurrent consumers (eg min &lt; max), then this option can be
+         * used to set a value to eg 100 to control how fast the consumers will
          * shrink when less work is required.
          * 
          * The option will be converted to a &lt;code&gt;int&lt;/code&gt; type.
@@ -5932,8 +5932,8 @@ public interface JmsEndpointBuilderFactory {
         }
         /**
          * The number of messages per task. -1 is unlimited. If you use a range
-         * for concurrent consumers (eg min max), then this option can be used
-         * to set a value to eg 100 to control how fast the consumers will
+         * for concurrent consumers (eg min &lt; max), then this option can be
+         * used to set a value to eg 100 to control how fast the consumers will
          * shrink when less work is required.
          * 
          * The option is a: &lt;code&gt;int&lt;/code&gt; type.
@@ -5951,8 +5951,8 @@ public interface JmsEndpointBuilderFactory {
         }
         /**
          * The number of messages per task. -1 is unlimited. If you use a range
-         * for concurrent consumers (eg min max), then this option can be used
-         * to set a value to eg 100 to control how fast the consumers will
+         * for concurrent consumers (eg min &lt; max), then this option can be
+         * used to set a value to eg 100 to control how fast the consumers will
          * shrink when less work is required.
          * 
          * The option will be converted to a &lt;code&gt;int&lt;/code&gt; type.

@@ -59,7 +59,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Async HTTP Client (AHC) (camel-ahc)
-     * Call external HTTP services using Async Http Client.
+     * Call external HTTP services using .
      * 
      * Category: http
      * Since: 2.8
@@ -72,7 +72,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Async HTTP Client (AHC) Websocket (camel-ahc-ws)
-     * Exchange data with external Websocket servers using Async Http Client.
+     * Exchange data with external Websocket servers using .
      * 
      * Category: websocket
      * Since: 2.14
@@ -85,7 +85,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Async HTTP Client (AHC) Secure Websocket (Secure) (camel-ahc-ws)
-     * Exchange data with external Websocket servers using Async Http Client.
+     * Exchange data with external Websocket servers using .
      * 
      * Category: websocket
      * Since: 2.14
@@ -203,7 +203,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Atomix Map (camel-atomix)
-     * Access Atomix's distributed map.
+     * Access Atomix's .
      * 
      * Category: clustering
      * Since: 2.20
@@ -216,7 +216,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Atomix Messaging (camel-atomix)
-     * Access Atomix's group messaging.
+     * Access Atomix's .
      * 
      * Category: clustering
      * Since: 2.20
@@ -229,7 +229,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Atomix MultiMap (camel-atomix)
-     * Access Atomix's distributed multi map.
+     * Access Atomix's .
      * 
      * Category: clustering
      * Since: 2.20
@@ -242,7 +242,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Atomix Queue (camel-atomix)
-     * Access Atomix's distributed queue.
+     * Access Atomix's .
      * 
      * Category: clustering
      * Since: 2.20
@@ -255,7 +255,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Atomix Set (camel-atomix)
-     * Access Atomix's distributed set.
+     * Access Atomix's .
      * 
      * Category: clustering
      * Since: 2.20
@@ -268,7 +268,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Atomix Value (camel-atomix)
-     * Access Atomix's distributed value.
+     * Access Atomix's .
      * 
      * Category: clustering
      * Since: 2.20
@@ -814,7 +814,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * CM SMS Gateway (camel-cm-sms)
-     * Send SMS messages via CM SMS Gateway.
+     * Send SMS messages via .
      * 
      * Category: mobile
      * Since: 2.18
@@ -920,7 +920,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Consul (camel-consul)
-     * Integrate with Consul service discovery and configuration store.
+     * Integrate with service discovery and configuration store.
      * 
      * Category: cloud,api
      * Since: 2.18
@@ -1297,7 +1297,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Ehcache (camel-ehcache)
-     * Perform caching operations using Ehcache.
+     * Perform caching operations using .
      * 
      * Category: cache,datagrid,clustering
      * Since: 2.18
@@ -1825,7 +1825,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Hazelcast List (camel-hazelcast)
-     * Perform operations on Hazelcast distributed list.
+     * Perform operations on distributed list.
      * 
      * Category: cache,datagrid
      * Since: 2.7
@@ -1838,7 +1838,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Hazelcast Map (camel-hazelcast)
-     * Perform operations on Hazelcast distributed map.
+     * Perform operations on distributed map.
      * 
      * Category: cache,datagrid
      * Since: 2.7
@@ -1851,7 +1851,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Hazelcast Multimap (camel-hazelcast)
-     * Perform operations on Hazelcast distributed multimap.
+     * Perform operations on distributed multimap.
      * 
      * Category: cache,datagrid
      * Since: 2.7
@@ -1864,7 +1864,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Hazelcast Queue (camel-hazelcast)
-     * Perform operations on Hazelcast distributed queue.
+     * Perform operations on distributed queue.
      * 
      * Category: cache,datagrid,messaging
      * Since: 2.7
@@ -1877,7 +1877,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Hazelcast Replicated Map (camel-hazelcast)
-     * Perform operations on Hazelcast replicated map.
+     * Perform operations on replicated map.
      * 
      * Category: cache,datagrid
      * Since: 2.16
@@ -1890,7 +1890,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Hazelcast Ringbuffer (camel-hazelcast)
-     * Perform operations on Hazelcast distributed ringbuffer.
+     * Perform operations on distributed ringbuffer.
      * 
      * Category: cache,datagrid
      * Since: 2.16
@@ -1917,7 +1917,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Hazelcast Set (camel-hazelcast)
-     * Perform operations on Hazelcast distributed set.
+     * Perform operations on distributed set.
      * 
      * Category: cache,datagrid
      * Since: 2.7
@@ -1930,7 +1930,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Hazelcast Topic (camel-hazelcast)
-     * Send and receive messages to/from Hazelcast distributed topic.
+     * Send and receive messages to/from distributed topic.
      * 
      * Category: cache,datagrid
      * Since: 2.15
@@ -2077,7 +2077,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Ignite Compute (camel-ignite)
-     * Run compute operations on an Ignite cluster.
+     * Run on an Ignite cluster.
      * 
      * Category: compute
      * Since: 2.17
@@ -2090,7 +2090,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Ignite Events (camel-ignite)
-     * Receive events from an Ignite cluster by creating a local event listener.
+     * from an Ignite cluster by creating a local event listener.
      * 
      * Category: messaging,eventbus
      * Since: 2.17
@@ -2103,7 +2103,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Ignite ID Generator (camel-ignite)
-     * Interact with Ignite Atomic Sequences and ID Generators .
+     * Interact with .
      * 
      * Category: compute
      * Since: 2.17
@@ -2116,7 +2116,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Ignite Messaging (camel-ignite)
-     * Send and receive messages from an Ignite topic.
+     * Send and receive messages from an .
      * 
      * Category: messaging
      * Since: 2.17
@@ -2129,7 +2129,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Ignite Queues (camel-ignite)
-     * Interact with Ignite Queue data structures.
+     * Interact with .
      * 
      * Category: messaging,queue
      * Since: 2.17
@@ -2142,7 +2142,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Ignite Sets (camel-ignite)
-     * Interact with Ignite Set data structures.
+     * Interact with .
      * 
      * Category: cache,compute
      * Since: 2.17
@@ -2209,7 +2209,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * InfluxDB (camel-influxdb)
-     * Interact with InfluxDB, a time series database.
+     * Interact with , a time series database.
      * 
      * Category: database
      * Since: 2.18
@@ -2261,8 +2261,8 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * IronMQ (camel-ironmq)
-     * Send and receive messages to/from IronMQ an elastic and durable hosted
-     * message queue as a service.
+     * Send and receive messages to/from an elastic and durable hosted message
+     * queue as a service.
      * 
      * Category: cloud,messaging
      * Since: 2.17
@@ -2770,8 +2770,8 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Kudu (camel-kudu)
-     * Interact with Apache Kudu, a free and open source column-oriented data
-     * store of the Apache Hadoop ecosystem.
+     * Interact with , a free and open source column-oriented data store of the
+     * Apache Hadoop ecosystem.
      * 
      * Category: database,iot,cloud
      * Since: 3.0
@@ -3115,7 +3115,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Nats (camel-nats)
-     * Send and receive messages from NATS messaging system.
+     * Send and receive messages from messaging system.
      * 
      * Category: messaging
      * Since: 2.17
@@ -3498,7 +3498,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * RabbitMQ (camel-rabbitmq)
-     * Send and receive messages from RabbitMQ instances.
+     * Send and receive messages from instances.
      * 
      * Category: messaging
      * Since: 2.12
@@ -3674,7 +3674,7 @@ public interface ComponentsBuilderFactory {
     /**
      * Scheduler (camel-scheduler)
      * Generate messages in specified intervals using
-     * java.util.concurrent.ScheduledExecutorService.
+     * &lt;code&gt;java.util.concurrent.ScheduledExecutorService.
      * 
      * Category: core,scheduling
      * Since: 2.15
@@ -3741,7 +3741,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * ServiceNow (camel-servicenow)
-     * Interact with ServiceNow via its REST API.
+     * Interact with via its REST API.
      * 
      * Category: api,cloud,management
      * Since: 2.18
@@ -4232,7 +4232,7 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Telegram (camel-telegram)
-     * Send and receive messages acting as a Telegram Bot Telegram Bot API.
+     * Send and receive messages acting as a Telegram Bot .
      * 
      * Category: cloud,api,chat
      * Since: 2.18
@@ -4272,7 +4272,8 @@ public interface ComponentsBuilderFactory {
     }
     /**
      * Timer (camel-timer)
-     * Generate messages in specified intervals using java.util.Timer.
+     * Generate messages in specified intervals using
+     * &lt;code&gt;java.util.Timer.
      * 
      * Category: core,scheduling
      * Since: 1.0

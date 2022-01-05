@@ -1,9 +1,11 @@
 [[hazelcast-queue-component]]
 = Hazelcast Queue Component
+//THIS FILE IS COPIED: EDIT THE SOURCE FILE:
+:page-source: components/camel-hazelcast/src/main/docs/hazelcast-queue-component.adoc
 :docTitle: Hazelcast Queue
 :shortname: hazelcast-queue
 :artifactId: camel-hazelcast
-:description: Perform operations on Hazelcast distributed queue.
+:description: Perform operations on distributed queue.
 :since: 2.7
 :supportLevel: Stable
 :component-header: Both producer and consumer are supported
